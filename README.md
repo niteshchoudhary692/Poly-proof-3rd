@@ -1,9 +1,10 @@
-# zardkat 🐱
+# My Circuit
 
-A [hardhat-circom](https://github.com/projectsophon/hardhat-circom) template to generate zero-knowledge circuits, proofs, and solidity verifiers
+A circuit to generate zero-knowledge circuits, proofs, and solidity verifiers
 
-## Quick Start
-Compile the Multiplier2() circuit and verify it against a smart contract verifier
+## Description
+
+In this project we have designed a new zkSNARK circuit that implements some logical operations. We implemented the circuit and deployed a verifier on-chain to verify proofs generated from this circuit .
 
 ```
 pragma circom 2.0.0;
@@ -22,17 +23,19 @@ template Multiplier2 () {
 }
 component main = Multiplier2();
 ```
+
+
 ### Install
 `npm i`
 
 ### Compile
 `npx hardhat circom` 
-This will generate the **out** file with circuit intermediaries and geneate the **MultiplierVerifier.sol** contract
+This will generate the **out** file with circuit intermediaries and geneate the **MyCircuit.sol** contract
 
 ### Prove and Deploy
 `npx hardhat run scripts/deploy.ts`
 This script does 4 things  
-1. Deploys the MultiplierVerifier.sol contract
+1. Deploys the MyCircuit.sol contract
 2. Generates a proof from circuit intermediaries with `generateProof()`
 3. Generates calldata with `generateCallData()`
 4. Calls `verifyProof()` on the verifier contract with calldata
