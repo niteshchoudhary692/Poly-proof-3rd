@@ -32,4 +32,16 @@ Use the command `npx hardhat run scripts/deploy.ts` to execute the deployment sc
 
 By running this script, you will deploy the Verifier contract and verify the proof against the circuit, ensuring the correctness of your implementation.
 
+### Conclusion 
+
+In conclusion, this digital circuit implemented in circom version 2.0.0 demonstrates a basic combination of logical gates to perform fundamental logic operations. The circuit consists of three template components: AND, OR, and NOT, which are utilized in the main logic defined within the MyCircuit template.
+
+By providing two input signals a and b, the circuit performs logical AND and NOT operations to generate two intermediate signals X and Y. These intermediate signals are then used to perform a logical OR operation, resulting in the final output signal Q.
+
+This circuit can serve as a foundation for more complex digital systems and arithmetic logic units (ALUs). Its simplicity and modularity make it suitable for educational purposes, as well as for prototyping and testing various logic configurations.
+
+To use the circuit, circom version 2.0.0 must be installed on the system, and the circuit needs to be compiled to generate the corresponding .json and .wasm files. With the circuit compiled, users can set input values for signals a and b, perform calculations, and retrieve the output value Q.
+
+The project is provided under the permissive MIT License, granting users the freedom to use, modify, and distribute the circuit as they see fit.
+
 
