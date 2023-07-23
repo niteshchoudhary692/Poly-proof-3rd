@@ -6,6 +6,8 @@ A circuit to generate zero-knowledge circuits, proofs, and solidity verifiers
 
 In this project we have designed a new zkSNARK circuit that implements some logical operations. We implemented the circuit and deployed a verifier on-chain to verify proofs generated from this circuit .
 
+<img width="592" alt="image" src="https://github.com/s0HaNp/PolygonModule3/assets/95775561/e15a0cee-4fff-4571-8a63-8db8defcb4d8">
+
 ## Circuit Components
 
 - AND Gate: The AND gate takes input signals A and B and produces an output signal, X, representing the logical AND of A and B.
