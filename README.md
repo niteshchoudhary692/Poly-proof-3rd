@@ -25,7 +25,7 @@ Compile the project by running `npx hardhat compile`. This will generate the `ou
 
 Use the command `npx hardhat run scripts/deploy.ts` to execute the deployment script. This script performs the following tasks:
 
-1. Deploys the `MultiplierVerifier.sol` contract on the blockchain.
+1. Deploys the `MyCircuitVerifier.sol` contract on the blockchain.
 2. Generates a proof using circuit intermediaries with the `generateProof()` function.
 3. Creates calldata for the verification process using the `generateCallData()` function.
 4. Calls the `verifyProof()` method on the deployed Verifier contract with the generated calldata to verify the proof.
