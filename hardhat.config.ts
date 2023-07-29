@@ -16,7 +16,7 @@ import "./tasks/newcircuit.ts"
 const mumbaiConfig: NetworkUserConfig = {
   url: "https://rpc-mumbai.maticvigil.com", // Mumbai network RPC URL
   accounts: [ // Specify accounts as an array of private keys
-    "0x37e9b7ab5b9d40ab548d24a9fc371dd10667f2a57e7a5bea40f38926e34e7224",
+    " Your private key ",
     // Add more private keys if needed
   ],
 };
