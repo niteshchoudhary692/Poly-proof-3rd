@@ -11,12 +11,12 @@ import circuits = require('./circuits.config.json')
 process.env.BASE_PATH = __dirname;
 
 // tasks
-import "./tasks/newcircuit.ts"
+import "./tasks/newcircuit"
 
 const mumbaiConfig: NetworkUserConfig = {
   url: "https://rpc-mumbai.maticvigil.com", // Mumbai network RPC URL
   accounts: [ // Specify accounts as an array of private keys
-    " Your private key ",
+    "5de4111afa1a4b94908f83103eb1f1706367c2e68ca870fc3fb9a804cdab365a",
     // Add more private keys if needed
   ],
 };
